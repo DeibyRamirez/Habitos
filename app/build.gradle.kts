@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.cheiviz.habit_tracker"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.cheiviz.habit_tracker"
@@ -40,6 +40,9 @@ android {
 }
 
 dependencies {
+
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
