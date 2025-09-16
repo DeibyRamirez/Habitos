@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Botón configuración -->
+    <Button
+        android:id="@+id/btnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ⚙ "
+        android:layout_gravity="end" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Lista de Hábitos"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Lista de hábitos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHabitos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón agregar hábito -->
+    <Button
+        android:id="@+id/btnAgregarHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="➕ Agregar Hábito" />
+</LinearLayout>
